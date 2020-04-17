@@ -51,6 +51,10 @@ button:hover{
     background-color: #00000080;
     cursor: pointer;
 }
+button:active{
+    background-color: #00000070;
+    cursor: pointer;
+}
 
 input{
     padding: 12px 12px;
