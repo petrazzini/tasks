@@ -19,7 +19,7 @@ function renderTodos() {
 
         var pos = todos.indexOf(todo);
         linkElement.setAttribute('onclick', 'deleteTodo(' + pos + ')')
-        var linkText = document.createTextNode('✓ Marcar como Feito');
+        var linkText = document.createTextNode('✓ Done');
         linkElement.appendChild(linkText);
 
         taskText.appendChild(todoText);
