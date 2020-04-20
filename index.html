@@ -4,9 +4,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">        
         <title>Daily tasks</title>
+        <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
         <link rel="stylesheet" href="stylesheet.css">
     </head>
     <body>
+        <p class="who"> Made by <a href="http://linkedin.com/in/petrazzini" target="_blank">@petrazzini</a></p>
         <center>
         <H1>Tarefas do dia</H1>
         <span id="date_time"></span>
@@ -14,12 +16,16 @@
             <ul>
             </ul>
             <form>
-                <input type="text" placeholder="Adicionar nova tarefa" class="">
+                <input type="text" placeholder="Adicionar nova tarefa" required pattern="\S+">
                 <button> Adicionar </button>
             </form>
             </div>
         </div>
-        </center>
+    </center>
+
+
+
+
         <script src="todo.js"></script>
     </body>
 </html>
