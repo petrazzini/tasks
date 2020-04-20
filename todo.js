@@ -9,24 +9,27 @@ function renderTodos() {
 
     for (todo of todos) {
         var todoElement = document.createElement('li');
+        var taskText = document.createElement('p');
         var todoText = document.createTextNode(todo);
+        taskText.setAttribute('class', 'task');
 
         var linkElement = document.createElement('a');
         linkElement.setAttribute('href', '#');
+        linkElement.setAttribute('class', 'delete');
 
         var pos = todos.indexOf(todo);
         linkElement.setAttribute('onclick', 'deleteTodo(' + pos + ')')
         var linkText = document.createTextNode('✓ Marcar como Feito');
         linkElement.appendChild(linkText);
 
-        todoElement.appendChild(todoText);
+        taskText.appendChild(todoText);
+        todoElement.appendChild(taskText);
         todoElement.appendChild(linkElement);
         listElement.appendChild(todoElement);
     }
 }
 
 renderTodos();
-
     function addTodo() {
     var todoText = inputElement.value;
 
